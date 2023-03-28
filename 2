@@ -1,0 +1,51 @@
+# CTDLGT1.3.cpp
+#include<stdio.h>
+#include<codio.h>
+Struct Diem
+{
+        float x;
+        float y;
+}
+typedef Struct Diem DIEM;
+void NhapDiem(DIEM &);
+void XuatDiem(DIEM);
+Struct DuongTron
+{
+       float R;
+}
+typedef Struct DuongTron DUONGTRON;
+void Nhap DuongTron(DUONGTRON &);
+void Xuat DuongTron(DUONGTRON);
+void NhapDiem(DIEM &d);
+}
+       float p;
+       printf("\nNhap x: ");
+       scanf("%f", &p); 
+       d.x = p; 
+       printf("\nNhap y: "); 
+       scanf("%f", &p); 
+       d.y = p;
+}
+void XuatDiem(DIEM d) 
+{ 
+      printf("(%f, %f)" , d.x, d.y); 
+}  
+ void NhapDuongTron(DUONGTRON &dt) 
+{ 
+      float p; 
+      printf("\nNhap ban kinh: "); 
+      scanf("%f", &p); 
+      dt.R = p; 
+}
+void XuatDuongTron(DUONGTRON dt) 
+{ 
+      printf("(%f, %f, %f)", dt.x, dt.y, dt.R); 
+} 
+int main()
+{ 
+     DIEM d; 
+     DUONGTRON dt; 
+     NhapDuongTron(dt); 
+     XuatDuongTron(dt);  
+     return 0; 
+}
